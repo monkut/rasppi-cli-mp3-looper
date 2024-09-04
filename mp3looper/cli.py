@@ -18,8 +18,6 @@ def loop_play(directory: Path):
     if not directory.glob(MP3_EXT):
         print(f"ERROR -- directory does NOT contain {MP3_EXT} files: {directory}")
 
-    for i in directory.glob(MP3_EXT):
-        print(i)
     loop_count = 0
     while True:
         print(f"loop_count={loop_count}")
